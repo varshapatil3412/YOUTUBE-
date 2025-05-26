@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>YouTube Summary</title>
+  <style>
+    body {
+      width: 300px;
+      padding: 15px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+      color: #333;
+    }
+    h1 {
+      font-size: 18px;
+      margin-bottom: 15px;
+      color: #2d3748;
+      text-align: center;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    select {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 15px;
+      border-radius: 20px;
+      border: 1px solid #ccc;
+      background: white;
+      font-size: 14px;
+    }
+    button {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-weight: 600;
+      box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+      transition: all 0.2s;
+      width: 100%;
+    }
+    button:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+    }
+    .status {
+      margin-top: 15px;
+      font-size: 14px;
+      color: #4a5568;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>YouTube Summary</h1>
+    <select id="ai-model">
+      <option value="chatgpt">ChatGPT</option>
+      <option value="gemini">Gemini</option>
+      <option value="claude">Claude AI</option>
+    </select>
+    <button id="summarize">Summarize This Video</button>
+    <p class="status" id="status">Select AI model and click to summarize.</p>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

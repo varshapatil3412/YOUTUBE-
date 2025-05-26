@@ -1,0 +1,1 @@
+This is a placeholder file. You'll need to create icon images (16x16, 48x48, and 128x128) and place them in this directory.
